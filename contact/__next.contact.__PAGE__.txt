@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[65254,["/_next/static/chunks/796e69ae18b2784c.js","/_next/static/chunks/8ea84bf5ea13612d.js"],"default"]
+3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7340adf74ff47ec0.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"18jUYYdr7HPegEeu-IuYj","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"py-24 container mx-auto px-4","children":[["$","h1",null,{"className":"text-5xl font-bold text-center mb-12","children":"Get Your Free Solar Quotes"}],["$","$L2",null,{}],["$","div",null,{"className":"text-center mt-12 text-xl","children":[["$","p",null,{"children":"Or reach us directly:"}],["$","p",null,{"className":"font-bold text-3xl text-green-600 mt-4","children":"WhatsApp: 082 784 1234"}],["$","p",null,{"className":"mt-2","children":"We reply in minutes!"}]]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/8ea84bf5ea13612d.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
