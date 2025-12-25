@@ -2,12 +2,12 @@
   "name": "gosolarcpt",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gosolarcpt.co.za",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "create-out": "npm run build && echo '/out folder created! Ready for upload to Xneelo/Afrihost/Godaddy/etc.'",
-    "lint": "eslint"
+    "predeploy": "npm run build && cp public/CNAME out/ 2>/dev/null || true && touch out/.nojekyll",
+    "deploy": "npx gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
