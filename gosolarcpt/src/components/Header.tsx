@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // npm install lucide-react (once)
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,23 +13,23 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/how-it-works", label: "How It Works" },
-    { href: "/pricing", label: "Pricing" },
-    { href: "/contact", label: "Contact" },
-  ];
+    { href: "/how-it-works/", label: "How It Works" },
+    { href: "/solar-cost-cape-town/", label: "Solar Cost" },
+    { href: "/guides/", label: "Guides" },
+      ];
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      <nav className="container mx-auto px-4 py-5 flex justify-between items-center relative">
+      <nav className="wrap py-3 flex justify-between items-center relative">
         {/* Logo – centered on mobile, left on desktop */}
         <div className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
           <Link href="/" className="flex items-center" onClick={closeMenu}>
             <Image
               src="/GSC-logo.svg"
               alt="GoSolarCPT Logo"
-              width={140}
-              height={90}
-              className="h-10 w-auto md:h-12 object-contain drop-shadow-sm"
+              width={160}
+              height={100}
+              className="h-14 w-auto md:h-16 object-contain drop-shadow-sm"
               priority
             />
           </Link>
@@ -46,7 +46,7 @@ export default function Header() {
         </button>
 
         {/* Desktop Nav – hidden on mobile */}
-        <div className="hidden md:flex gap-8 text-lg font-medium">
+        <div className="hidden md:flex items-center gap-8 text-base font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -56,6 +56,7 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <Link href="/contact/" className="btn-primary !py-2.5 !px-5 text-sm">Get free quotes</Link>
         </div>
 
         {/* Mobile Slide-in Menu – from right, 80% width */}
@@ -75,6 +76,7 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <Link href="/contact/" onClick={closeMenu} className="btn-primary">Get free quotes</Link>
           </div>
         </div>
 
