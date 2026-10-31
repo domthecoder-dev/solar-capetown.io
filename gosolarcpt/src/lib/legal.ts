@@ -4,15 +4,15 @@
 export const LEGAL = {
   tradingName: "GoSolarCPT",
   // TODO(owner): registered company or sole-proprietor name, e.g. "GoSolarCPT (Pty) Ltd"
-  legalName: "",
+  legalName: "Dominic E.",
   // TODO(owner): CIPC registration number (leave empty for a sole proprietor)
   registrationNumber: "",
   // TODO(owner): physical address (needed for ECTA and POPIA notices)
   address: "",
   // TODO(owner): a monitored email address for privacy requests
-  privacyEmail: "",
+  privacyEmail: "info@deinnovativesolutions.com",
   // TODO(owner): name of the Information Officer (the owner or director by default)
-  informationOfficer: "",
+  informationOfficer: "Dominic E.",
   whatsapp: "064 321 2426",
   lastUpdated: "31 October 2026",
   // Bump when consent wording changes; recorded with each lead.
