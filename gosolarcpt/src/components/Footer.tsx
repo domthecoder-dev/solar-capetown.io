@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { AREAS } from "@/lib/areas";
 import { SITE } from "@/lib/constants";
-import { LEGAL } from "@/lib/legal";
 import CookieSettingsLink from "./CookieSettingsLink";
 
 export default function Footer() {
@@ -33,7 +32,7 @@ export default function Footer() {
           </ul>
         </nav>
       </div>
-      <p className="wrap mt-8 text-xs text-gray-500">© {new Date().getFullYear()} {LEGAL.legalName || SITE.name}. Powered by DE Innovative Solutions. Prices and savings are indicative and not a quote.</p>
+      <p className="wrap mt-8 text-xs text-gray-500">© {new Date().getFullYear()} {SITE.name}. Powered by DE Innovative Solutions. Prices and savings are indicative and not a quote.</p>
     </footer>
   );
 }

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: SITE.url,
     title: "Solar Quotes Cape Town | GoSolarCPT",
     description: "Estimate your solar savings and get up to 3 free quotes from Cape Town installers.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   twitter: { card: "summary_large_image" },
 };
